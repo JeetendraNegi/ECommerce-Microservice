@@ -1,0 +1,12 @@
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\bin\Debug\net6.0\MessageBrokerService.deps.json
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\bin\Debug\net6.0\MessageBrokerService.dll
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\bin\Debug\net6.0\MessageBrokerService.pdb
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.csproj.AssemblyReference.cache
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.AssemblyInfoInputs.cache
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.AssemblyInfo.cs
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.csproj.CoreCompileInputs.cache
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.dll
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\refint\MessageBrokerService.dll
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\MessageBrokerService.pdb
+C:\Jeetendra\ECommerce Microservice\RabbitMqMessageBrokerService\MessageBrokerService\obj\Debug\net6.0\ref\MessageBrokerService.dll

@@ -1,0 +1,73 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+              <div>
+                <a routerLink="/address" class="btn btn-info pull-left" style="bottom: 22px;">
+                    <i class="material-icons">keyboard_return</i>&nbsp;  Back to List 
+                </a>
+              </div>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Edit User</h4>
+                        <p class="card-category"> Edit the user Detail</p>
+                    </div>
+                    <div class="card-body">
+                        <form #editUserForm>
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Company (disabled)" disabled>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Address Type" name="addressType" [(ngModel)]="address.addressType">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="House No" type="text" name="houseNo" [(ngModel)]="address.houseNo">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Street Name" type="text" name="streetName" [(ngModel)]="address.streetName">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Near By" type="text" name="nearBy" [(ngModel)]="address.nearBy">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="City" type="text" name="city" [(ngModel)]="address.city">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="State" type="text" name="state" [(ngModel)]="address.state">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Postal Code" type="text" name="areaPIN"  [(ngModel)]="address.areaPIN">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <button (click)="updateAddressSubmit();" mat-raised-button type="submit" class="btn btn-success pull-right" style="font-size: 12px;">
+                                Update Address <i class="material-icons">save</i>
+                            </button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

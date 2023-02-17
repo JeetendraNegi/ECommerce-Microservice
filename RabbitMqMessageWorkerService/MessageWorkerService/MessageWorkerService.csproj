@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MessageWorkerService-A3BFF46D-4037-4DFF-95BD-07F9E0873E18</UserSecretsId>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MessageBrokerService">
+      <HintPath>..\..\RabbitMqMessageBrokerService\MessageBrokerService\bin\Debug\net6.0\MessageBrokerService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

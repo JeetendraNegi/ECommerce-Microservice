@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ORKYWc+YYUbd+m+Hhh4oHKgh1AkRsuuh2PY2CkGyJhNWAonSJulacxUoVkQ7DBrN2VqbxGrIZLvHOtSqkP3tmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Jeetendra\\ECommerce Microservice\\RabbitMqMessageBrokerService\\MessageBrokerService\\MessageBrokerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jeetendra\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\jeetendra\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\jeetendra\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

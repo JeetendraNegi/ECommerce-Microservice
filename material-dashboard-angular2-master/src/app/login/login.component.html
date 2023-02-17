@@ -1,0 +1,36 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" style="margin: auto; margin-top:10%; ">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">User Login</h4>
+                        <p class="card-category"> Authenticate users to the eCommerse App</p>
+                    </div>
+                    <div class="card-body">
+                        <form #loginUserForm>
+                            <div class="row">
+                                <div class="col-md-10">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="User ID" type="text" [(ngModel)]="user.userId">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Password" type="password" [(ngModel)]="user.password">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <button (click)="loginUserSubmit();" mat-raised-button type="submit" class="btn btn-success pull-right" style="font-size: 12px;">
+                                Login &nbsp;<i class="material-icons">send</i>
+                            </button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

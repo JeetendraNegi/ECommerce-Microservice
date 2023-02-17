@@ -1,0 +1,15 @@
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\bin\Debug\net6.0\UserAgent.exe
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\bin\Debug\net6.0\UserAgent.deps.json
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\bin\Debug\net6.0\UserAgent.runtimeconfig.json
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\bin\Debug\net6.0\UserAgent.dll
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\bin\Debug\net6.0\UserAgent.pdb
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.csproj.AssemblyReference.cache
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.AssemblyInfoInputs.cache
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.AssemblyInfo.cs
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.csproj.CoreCompileInputs.cache
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.dll
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\refint\UserAgent.dll
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.pdb
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\UserAgent.genruntimeconfig.cache
+C:\Jeetendra\ECommerce Microservice\UserAgent\UserAgent\obj\Debug\net6.0\ref\UserAgent.dll

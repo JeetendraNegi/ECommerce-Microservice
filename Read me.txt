@@ -1,0 +1,8 @@
+Technology Using :- 
+
+Bug Service : - RabbitMQ
+API Gateway : - Ocelot
+Database : - MongoDB
+Framework : - DotNet 6
+ForntEnd UI : - Angular 14, Angular material
+Background Worker : - Dotnet worker service

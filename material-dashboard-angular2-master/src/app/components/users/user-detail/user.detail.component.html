@@ -1,0 +1,87 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+            <div>
+              <a routerLink="adduser" class="btn btn-success pull-left" style="bottom: 22px;">
+                Add New User <i class="material-icons">add_circle</i>
+              </a>
+            </div>
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Users List</h4>
+                      <p class="card-category"> All users of the eCommerse App</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead appTableHeader>
+                                  <th>
+                                      S.No
+                                  </th>
+                                  <th>
+                                      User ID
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      Contact No
+                                  </th>
+                                  <th>
+                                    Address
+                                  </th>
+                                  <th>
+                                    Cards
+                                  </th>
+                                  <th>
+                                      Action
+                                  </th>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor = "let user of users; let i = index">
+                                      <td appTest>
+                                          {{(i+1)}}
+                                      </td>
+                                      <td>
+                                          {{user.id}}
+                                      </td>
+                                      <td appTest>
+                                          {{user.firstName}} {{user.lastName}}
+                                      </td>
+                                      <td>
+                                          {{user.contactNo}}
+                                      </td>
+                                      <td>
+                                        <a href="#" matTooltip="User Address">
+                                          <i class="material-icons" style="color: black;">home</i>
+                                          <span class="notification" >{{user.userAddress | countArrayItem }}</span>
+                                        </a>
+                                      </td>
+                                      <td>
+                                        <a href="#" matTooltip="User Cards">
+                                          <i class="material-icons" style="color: black;">credit_card</i>
+                                          <span class="notification">{{user.cardDetail | countArrayItem}}</span>
+                                        </a>
+                                      </td>
+                                      <td class="text-primary">
+                                        <a routerLink="edituser" [queryParams]="{ id:user.id }" matTooltip="Edit User">
+                                          <i class="material-icons" style="color: green;">edit</i>
+                                        </a>&nbsp;
+                                        <a routerLink="viewuser" [queryParams]="{ id:user.id }" matTooltip="View Detail">
+                                          <i class="material-icons" style="color: black;">event_note</i>
+                                        </a>&nbsp;
+                                        <a href="#" matTooltip="Delete User">
+                                          <i class="material-icons" style="color: red;">delete</i>
+                                        </a>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

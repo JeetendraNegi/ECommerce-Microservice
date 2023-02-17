@@ -1,0 +1,92 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+              <div>
+                <a routerLink="newaddress" class="btn btn-success pull-left" style="bottom: 22px;">
+                  Add New Card <i class="material-icons">add_circle</i>
+                </a>
+              </div>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Card List</h4>
+                        <p class="card-category"> All Users card List</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead appTableHeader>
+                                    <th>
+                                        S.No
+                                    </th>
+                                    <th>
+                                        User ID
+                                    </th>
+                                    <th>
+                                        Card Type
+                                    </th>
+                                    <th>
+                                        Card No
+                                    </th>
+                                    <th>
+                                      Exp Date
+                                    </th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor = "let card of cards; let i = index">
+                                        <td appTest>
+                                            {{(i+1)}}
+                                        </td>
+                                        <td>
+                                            {{card.userID}}
+                                        </td>
+                                        <td>
+                                            {{card.cardType}}
+                                        </td>
+                                        <td>
+                                            {{card.cardNo}}
+                                        </td>
+                                        <td>
+                                            {{card.expDate}}
+                                        </td>
+                                        <td class="text-primary">
+                                          <a routerLink="editaddress" [queryParams]="{ id:card.id }" matTooltip="Edit Address">
+                                            <i class="material-icons" style="color: green;">edit</i>
+                                          </a>&nbsp;
+                                          <a [routerLink]="['viewaddress']" [queryParams]="{ id:card.id, userid: card.userID }" matTooltip="View Address">
+                                            <i class="material-icons" style="color: black;">event_note</i>
+                                          </a>&nbsp;
+                                          <a href="#" matTooltip="Delete Address">
+                                            <i class="material-icons" style="color: red;">delete</i>
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,103 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+              <div>
+                <a routerLink="/address" class="btn btn-info pull-left" style="bottom: 22px;">
+                    <i class="material-icons">keyboard_return</i>&nbsp;  Back to List 
+                </a>
+              </div>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Address Detail</h4>
+                        <p class="card-category">user Address Details of <b>{{user.firstName}} {{user.lastName}}</b></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-md-12">
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">User Name</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    <b>{{user.firstName}} {{user.lastName}}</b>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Address Type</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    {{userAddress.addressType}}
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">House No</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    {{userAddress.houseNo}}
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Street Name</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    {{userAddress.streetName}}
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                      <h6 class="mb-0">Near By</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                      {{userAddress.nearBy}}
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-2">
+                                      <h6 class="mb-0">Area PIN</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                      {{userAddress.areaPIN}}
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-2">
+                                      <h6 class="mb-0">City</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                      {{userAddress.city}}
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-2">
+                                      <h6 class="mb-0">State</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                      {{userAddress.state}}
+                                    </div>
+                                  </div>
+                                  <hr>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <a class="btn btn-info " routerLink="/address/editaddress" [queryParams]="{ id:userAddress.id }" >Edit</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

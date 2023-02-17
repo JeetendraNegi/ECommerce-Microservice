@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <!--<Nullable>enable</Nullable>-->
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AsyncMessaging\**" />
+    <Content Remove="AsyncMessaging\**" />
+    <EmbeddedResource Remove="AsyncMessaging\**" />
+    <None Remove="AsyncMessaging\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.7" />
+    <PackageReference Include="MongoDB.Driver" Version="2.16.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MessageBrokerService">
+      <HintPath>..\..\RabbitMqMessageBrokerService\MessageBrokerService\bin\Debug\net6.0\MessageBrokerService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

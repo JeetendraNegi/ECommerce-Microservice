@@ -1,0 +1,17 @@
+.notification {
+    background: #f44336;
+    color: #FFFFFF;
+    font-size: 9px;
+    min-width: 20px;
+    position: absolute;
+    border: 1px solid #FFF;
+    padding: 0px 5px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 19px;
+    display: block;
+    top: 0;
+    margin-left: 12px;
+    margin-top: 8px;
+}

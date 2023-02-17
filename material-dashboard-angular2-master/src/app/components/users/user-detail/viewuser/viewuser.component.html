@@ -1,0 +1,173 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+              <div>
+                <a routerLink="/users" class="btn btn-info pull-left" style="bottom: 22px;">
+                    <i class="material-icons">keyboard_return</i>&nbsp;  Back to List 
+                </a>
+              </div>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">User Detail</h4>
+                        <p class="card-category">user Details of <b>{{user.firstName}} {{user.lastName}}</b></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-md-12">
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Full Name</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    <b>{{user.firstName}} {{user.lastName}}</b>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Contact No</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    {{user.contactNo}}
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Address</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                                <th>
+                                                    S.No
+                                                </th>
+                                                <th>
+                                                    Address Type
+                                                </th>
+                                                <th>
+                                                    Address
+                                                </th>
+                                                <th>
+                                                    City
+                                                </th>
+                                                <th>
+                                                  State
+                                                </th>
+                                                <th>
+                                                  Area PIN
+                                                </th>
+                                                <th>
+                                                    Action
+                                                </th>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor = "let address of user.userAddress; let i = index">
+                                                    <td>
+                                                        {{(i+1)}}
+                                                    </td>
+                                                    <td>
+                                                        {{address.addressType}}
+                                                    </td>
+                                                    <td>
+                                                        {{address.houseNo}}, {{address.streetName}}, near By {{address.nearBy}}
+                                                    </td>
+                                                    <td>
+                                                        {{address.city}}
+                                                    </td>
+                                                    <td>
+                                                        {{address.state}}
+                                                    </td>
+                                                    <td>
+                                                        {{address.areaPIN}}
+                                                    </td>
+                                                    <td class="text-primary">
+                                                      <a routerLink="/address/editaddress" [queryParams]="{ id:address.id }" matTooltip="Edit User">
+                                                        <i class="material-icons" style="color: green;">edit</i>
+                                                      </a>&nbsp;
+                                                      <a routerLink="/address/viewaddress" [queryParams]="{ id:address.id, userid: address.userID}" matTooltip="View Detail">
+                                                        <i class="material-icons" style="color: black;">event_note</i>
+                                                      </a>&nbsp;
+                                                      <a href="#" matTooltip="Delete User">
+                                                        <i class="material-icons" style="color: red;">delete</i>
+                                                      </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <h6 class="mb-0">Card Details</h6>
+                                  </div>
+                                  <div class="col-sm-10 text-secondary">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                                <th>
+                                                    S.No
+                                                </th>
+                                                <th>
+                                                    Card Type
+                                                </th>
+                                                <th>
+                                                    Card No
+                                                </th>
+                                                <th>
+                                                    Exp Date
+                                                </th>
+                                                <th>
+                                                    Action
+                                                </th>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor = "let card of user.cardDetail; let i = index">
+                                                    <td>
+                                                        {{(i+1)}}
+                                                    </td>
+                                                    <td>
+                                                        {{card.cardType}}
+                                                    </td>
+                                                    <td>
+                                                        {{card.cardNo}}
+                                                    </td>
+                                                    <td>
+                                                        {{card.expDate}}
+                                                    </td>
+                                                    <td class="text-primary">
+                                                      <a routerLink="edituser" [queryParams]="{ id:card.id }" matTooltip="Edit User">
+                                                        <i class="material-icons" style="color: green;">edit</i>
+                                                      </a>&nbsp;
+                                                      <a routerLink="viewuser" [queryParams]="{ id:card.id }" matTooltip="View Detail">
+                                                        <i class="material-icons" style="color: black;">event_note</i>
+                                                      </a>&nbsp;
+                                                      <a href="#" matTooltip="Delete User">
+                                                        <i class="material-icons" style="color: red;">delete</i>
+                                                      </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <a class="btn btn-info " routerLink="/users/edituser" [queryParams]="{ id:user.id }" >Edit</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
