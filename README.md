@@ -1,11 +1,11 @@
 Technology Using :- 
 
-message Service : - RabbitMQ
-API Gateway : - Ocelot
-Database : - MongoDB
-Framework : - DotNet 6
-ForntEnd UI : - Angular 14, Angular material
-Background Worker : - Dotnet worker service
+1. message Service : - RabbitMQ
+2. API Gateway : - Ocelot
+3. Database : - MongoDB
+4. Framework : - DotNet 6
+5. ForntEnd UI : - Angular 14, Angular material
+6. Background Worker : - Dotnet worker service
 
 
 e-commerce Microservices
