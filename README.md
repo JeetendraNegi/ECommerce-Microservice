@@ -1,6 +1,6 @@
 Technology Using :- 
 
-Bug Service : - RabbitMQ
+message Service : - RabbitMQ
 API Gateway : - Ocelot
 Database : - MongoDB
 Framework : - DotNet 6
